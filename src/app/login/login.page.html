@@ -1,0 +1,26 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/signup">Crear cuenta</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <h1>Bajo Cero</h1>
+    <img src="assets/helado.jpg"/>
+  </div>
+
+  <form id="form">
+    <app-input placeholder="Correo"></app-input>
+    <app-input type="password" placeholder="Contraseña"></app-input>
+    <ion-button expand="block" shape="round">Ingresar</ion-button>
+    <ion-button expand="block" shape="round">Ingresar como invitado</ion-button>
+  </form>
+</ion-content>
