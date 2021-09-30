@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+  optionSelected: any;
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -18,6 +19,16 @@ export class AppComponent {
     public router:Router
   ) {
     this.initializeApp();
+  }
+  
+  recoverAlertValue (event: CustomEvent){
+    console.log(event.detail.value);
+
+
+
+    this.optionSelected = event.detail.value;
+
+
   }
 
   initializeApp() {

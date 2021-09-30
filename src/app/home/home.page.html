@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <p> Elije tu helado </p>
+      <button ion-button full>Siguiente</button>
+      <!-- falta a futuro colocar que redirija a la pag -->
+      <!-- idea colocar despues de ion-button button-right -->
+    </ion-title>  
+    <!-- parte del titulo mas el boton , np se como mover direccion boton -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-body [side ="true">
+<div id="container">
+  <ion-icon name="ice-cream-outline"></ion-icon>
+ <!-- para poner comentarios control + k +c y para quitarlos control k+u -->
+ <!-- no se ve pero es aqui donde estan las imagnes preguntar -->
+
+  <p> 1 sabor a eleccion </p>
+  <ion-list> 
+    <ion-item>
+      <ion-label> chocolate</ion-label>
+    <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+ 
+    <ion-item>
+      <ion-label> vainilla</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label> frutilla</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+   
+    <ion-item>
+      <ion-label> piña</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+      </ion-list>
+
+
+       <p> precio: 850$ </p>
+    </div>
+
+    <div>
+  
+
+     <ion-item>
+      <ion-label>cantidad</ion-label>
+      <ion-select (ionChange)="recoverAlertValue($event)" multiple="true" okText="Aceptar" cancelText="Cancelar" interface="alert" placeHolder="selecciona">
+      <ion-select-option values="1">1</ion-select-option>
+      <ion-select-option values="2">2</ion-select-option>
+         </ion-select>
+
+         </ion-item> 
+            <!-- falta el crear un apartado por helados doble y triple y nada mas  -->
+
+          </div>
+    
+</ion-body>
