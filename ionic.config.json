@@ -1,5 +1,14 @@
 {
   "name": "ionic5tuts",
   "integrations": {},
-  "type": "angular"
+  "type": "angular",
+  
+  
+  "proxies": [
+    {
+      "path": "/",
+      "proxyUrl": "http://locahost:8000/api"
+    }
+  ]
 }
+

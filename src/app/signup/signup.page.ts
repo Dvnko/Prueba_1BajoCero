@@ -16,8 +16,8 @@ export class SignupPage implements OnInit {
   async getUsers() {
     await this.userRepository.signUp({
       contraseña: '1234',
-      correo: 'diego.garcia@mail.com',
-      nombre: 'Diego'
+      correo: 'dank.osorio@gmail.com',
+      nombre: 'Dank'
     });
   }
 

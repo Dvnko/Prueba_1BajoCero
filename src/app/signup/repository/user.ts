@@ -13,7 +13,7 @@ type User = {
 export class UserRepository {
     async signUp(data: User) {
         try {
-            await api.get('')
+            await api.post('',data)
         } catch (error) {
             console.error(error);
         }
